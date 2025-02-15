@@ -1,6 +1,8 @@
 # Urinary Metabolomics and Machine Learning: A Novel Diagnostic and Grading Method for Canine Mammary Tumors
-By Asher T Wang, Songyeon Lee, Byung Joon Seung, and Karin U Sorenmo
+By Asher T Wang, Songyeon Lee, Byung Joon Seung, and Karin U Sorenmo  
 ADD IN TARGET JOURNAL
+
+# pinga-lab paper-template
 
 \documentclass{article}
 \usepackage{graphicx}
