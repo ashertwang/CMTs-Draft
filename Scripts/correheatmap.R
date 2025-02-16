@@ -3,7 +3,7 @@ require(reshape2)
 require(DescTools)  # Cramér's V
 require(dplyr)
 
-data <- read.csv("/heatmap_main.csv", header = TRUE)
+data <- read.csv("../Data/heatmap_main.csv", header = TRUE)
 
 data$ER.Status <- as.factor(data$ER.Status)
 data$HER2.Status <- as.factor(data$HER2.Status)
