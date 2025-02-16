@@ -2,8 +2,7 @@
 By Asher T Wang, Songyeon Lee, Byung Joon Seung, and Karin U Sorenmo  
 ADD IN TARGET JOURNAL
 
-# pinga-lab paper-template
-
+# Latex
 \documentclass{article}
 \usepackage{graphicx}
 
