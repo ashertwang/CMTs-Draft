@@ -12,7 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('dist_ageosweight.csv')
+df = pd.read_csv('../Data/dist_ageosweight.csv')
 age_data = df['Age'].dropna()
 survival_data = df['Survival'].dropna()
 weight_data = df['Weight (Kg)'].dropna()
