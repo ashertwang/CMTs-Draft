@@ -12,7 +12,7 @@ from lifelines import KaplanMeierFitter
 from lifelines.statistics import logrank_test, multivariate_logrank_test
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('kaplanmeier_mg.csv', encoding='latin-1')
+data = pd.read_csv('../Data/kaplanmeier_mg.csv', encoding='latin-1')
 
 data['Grade'] = pd.Categorical(data['Grade'], categories=[1, 2, 3], ordered=True)
 data.dropna(inplace=True)
