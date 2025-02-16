@@ -17,7 +17,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 from sklearn.inspection import permutation_importance
 from imblearn.over_sampling import ADASYN
 
-data = pd.read_csv("mg_unadjmetaboliteprofiling.csv")
+data = pd.read_csv("../Data/mg_unadjmetaboliteprofiling.csv")
 features = data.columns[2:]
 target_column = 'Tumor Grade'
 
