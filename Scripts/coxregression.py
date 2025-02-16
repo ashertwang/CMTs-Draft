@@ -10,7 +10,7 @@ Original file is located at
 import pandas as pd
 from lifelines import CoxPHFitter
 
-data = pd.read_csv('coxregression_agemgpena_utf8.csv')
+data = pd.read_csv('../Data/coxregression_agemgpena_utf8.csv')
 
 data.columns = ["Sample", "Grade", "Survival", "Status", "Age", "Pena"]
 
