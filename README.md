@@ -1,5 +1,5 @@
 # Urinary Metabolomics and Machine Learning: A Novel Diagnostic and Grading Method for Canine Mammary Tumors
-By Asher T Wang, Songyeon Lee, Byung Joon Seung, and Karin U Sorenmo  
+By Asher T Wang, Songyeon Lee, Byung Joon Seung, and Karin U Sorenmo (Authorship TBD)
 ADD IN TARGET JOURNAL
 
 # Latex
@@ -7,7 +7,7 @@ ADD IN TARGET JOURNAL
 \usepackage{graphicx}
 
 \title{Urinary Metabolomics and Machine Learning: A Novel Diagnostic and Grading Method for Canine Mammary Tumors}
-\author{Asher T. Wang, Songyeon Lee, Byung-Joon Seung, Karin U. Sorenmo}
+\author{Asher T. Wang, Songyeon Lee, Byung-Joon Seung, Karin U. Sorenmo} (Authorship TBD)
 \publication{This paper has been submitted for publication in Veterinary and Comparative Oncology Journal}
 \date{\[]}
 
