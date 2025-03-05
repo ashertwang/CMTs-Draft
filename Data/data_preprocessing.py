@@ -194,41 +194,6 @@ def create_hvt_file(metabolite_df, clinical_data):
     
     return hvt_data
 
-def create_cox_regression_file(clinical_data):
-    """
-    Create the Cox regression file with age, MG, and Pena grade
-    """
-    print("Creating Cox regression file")
-    
-    # Extract relevant columns for Cox regression
-    cox_data = clinical_data[['Source Name', 'Grade', 'Survival', 'Status', 'Age']].copy()
-    
-    # Add MG (Metabolic Grade) column - this would typically come from a model
-    # For now, we'll use a placeholder based on existing data
-    cox_data['MG'] = cox_data['Grade']
-    
-    # Add Pena Grade column - this would typically come from a model
-    # For now, we'll use a placeholder based on existing data
-    cox_data['Pena Grade'] = cox_data['Grade']
-    
-    # Clean up sample names (remove trailing spaces)
-    cox_data['Sample'] = cox_data['Source Name'].str.strip()
-    
-    # Select and reorder columns
-    cox_data = cox_data[['Sample', 'Grade', 'Survival', 'Status', 'Age', 'MG', 'Pena Grade']]
-    
-    # Save to CSV
-    output_file = 'Data/coxregression_agemgpena.csv'
-    cox_data.to_csv(output_file, index=False)
-    print(f"Cox regression file saved to {output_file}")
-    
-    # Save to CSV with UTF-8 encoding (for compatibility)
-    output_file_utf8 = 'Data/coxregression_agemgpena_utf8.csv'
-    cox_data.to_csv(output_file_utf8, index=False, encoding='utf-8')
-    print(f"Cox regression file (UTF-8) saved to {output_file_utf8}")
-    
-    return cox_data
-
 def create_dist_age_os_weight_file(clinical_data):
     """
     Create the distribution of age, overall survival, and weight file
@@ -315,7 +280,6 @@ This directory contains processed data files derived from the original MAF and E
 1. **mvb_unadjmetaboliteprofiling.csv**: Metabolite data with tumor state (benign/malignant)
 2. **mg_unadjmetaboliteprofiling.csv**: Metabolite data with tumor grade
 3. **hvt_unadjmetaboliteprofiling.csv**: Metabolite data with HER2 status (high/low)
-4. **coxregression_agemgpena.csv**: Data for Cox regression analysis with age, metabolic grade, and Pena grade
 5. **dist_ageosweight.csv**: Distribution data for age, overall survival, and weight
 6. **heatmap_main.csv**: Combined metabolite and clinical data for heatmap visualization
 
@@ -368,7 +332,6 @@ def main():
     create_mvb_file(metabolite_df, clinical_data)
     create_mg_file(metabolite_df, clinical_data)
     create_hvt_file(metabolite_df, clinical_data)
-    create_cox_regression_file(clinical_data)
     create_dist_age_os_weight_file(clinical_data)
     create_heatmap_file(metabolite_df, clinical_data)
     
