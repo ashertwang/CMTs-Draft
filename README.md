@@ -1,10 +1,12 @@
-Urinary Metabolomics and Machine Learning: A Novel Diagnostic and Grading Method for Canine Mammary Tumors
+(Title Pending)
 Contributors: Asher T. Wang, Songyeon Lee, Byung-Joon Seung, Karin U. Sorenmo 
 Authors: Asher T. Wang, Karin U. Sorenmo, Byung-Joon Seung
 Status: Preparing for submission in The Veterinary Journal
 Introduction
-This repository contains the code and LaTeX files used to generate the results for our paper, Urinary Metabolomics and Machine Learning: A Novel Diagnostic and Grading Method for Canine Mammary Tumors.
+This repository contains the code files used to generate the results for our paper.
 This study introduces a machine learning (ML)-driven diagnostic model leveraging urinary metabolite profiling to classify malignant masses and assist in tumor grading. Using proton nuclear magnetic resonance (NMR) spectroscopy, we analyze 55 tumor-specific urinary metabolites from 156 dogs to develop accurate, non-invasive diagnostic tools.
+
+Included are the analyses of the selected (final) models. Note that figure generation may be omitted for brevity. Both Section A and Section B (leakage free/cross validated) codes and their respective datasets are included. The full repository is available online at https://www.ebi.ac.uk/metabolights/editor/MTBLS2550/.
 
 Software Implementation
 The analysis was conducted using Python within Jupyter notebooks.
