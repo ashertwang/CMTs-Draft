@@ -1,0 +1,7 @@
+Primary: 
+Raw Data Loading → Filter → Stratified 5-Fold CV → Impute (Median) → Scale → RFE (k=15) → ADASYN → RF Classifier → Metrics
+
+Secondary:
+Raw Data Loading → Filter & Pool → → Stratified 5-Fold CV → Impute (Median) → Scale → RFE (k=5) → ADASYN → RF Classifier → Youden’s J Threshold → Global RFE → Metrics & Error Analysis
+
+To maintain an n/p ratio of ~10 given the small cohort, we used RFE to narrow the feature pool. UM + breed pool performed with slightly higher PR-AUC than UM alone, though breed was not selected as a top 5 feature (possibly due to high cardinality). A sensitivity analysis with age was performed, and performance held.
